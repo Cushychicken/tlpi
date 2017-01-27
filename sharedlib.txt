@@ -1,0 +1,20 @@
+ 2243  gcc -c -Wall -Werror -fpic lib/error_functions.c
+ 2244  gcc -shared -o lib/lib_error_functions.so lib/error_functions.o
+ 2245  gcc -shared lib/error_functions.o -o lib/lib_error_functions.o
+ 2248  gcc -shared -o lib/lib_error_functions.so lib/error_functions.o
+ 2250  gcc -c -Wall -Werror -fpic lib/get_num.c -o lib/get_num.o
+ 2256  gcc -c -Wall -Werror -fpic lib/get_num.c -o lib/get_num.o
+ 2260  gcc -c -Wall -Werror -fpic lib/get_num.c -o lib/get_num.o
+ 2262  gcc -c -Wall -Werror -fpic lib/get_num.c -o lib/get_num.o
+ 2263  gcc -shared -o lib/lib_get_num.so lib/get_num.o
+ 2265  gcc -c -Wall -Werror -I./lib/ ch04/copy.c 
+ 2266  gcc -c -Wall -Werror -I./lib/ ch04/examples/copy.c 
+ 2268  gcc -c -Wall -Werror -I./lib/ ch04/examples/copy.c 
+ 2269  gcc -c -Wall -Werror -I./lib/ ch04/examples/copy.c -o copy
+ 2275  gcc -c -Wall -Werror -I./lib/ ch04/examples/copy.c -o copy
+ 2276  gcc -c -Wall -Werror -I./lib/ ch04/examples/copy.c -o ch04/examples/copy
+ 2281  gcc -c -Wall -Werror -I./lib/ ch04/examples/copy.c lib/lib_error_functions.so lib/lib_get_num.so -o ch04/examples/copy
+ 2285  gcc -c -Wall -Werror -L./lib/ ch04/examples/copy.c lib/lib_error_functions.so lib/lib_get_num.so -o ch04/examples/copy
+ 2291  history | grep gcc
+ 2292  history | grep gcc | tail -n 20
+ 2293  history | grep gcc | tail -n 20 > sharedlib.txt
