@@ -12,12 +12,12 @@ OBJECTS = $(patsubst %.c, %.o, $(wildcard *.c))
 HEADERS = $(wildcard *.h)
 
 %.o: %.c $(HEADERS) 
-	$(CC) $(CFLAGS) $(INCLUDE) -c $< -o $@ 
+	@$(CC) $(CFLAGS) $(INCLUDE) -c $< -o $@ 
 
 $(TARGET): $(OBJECTS)
-	$(CC) $(CFLAGS) $(LIBPATH) $(INCLUDE) $(OBJECTS) $(LIBS) -o $@ $(SHARLIB) 
+	@$(CC) $(CFLAGS) $(LIBPATH) $(INCLUDE) $(OBJECTS) $(LIBS) -o $@ $(SHARLIB) 
 
 clean:
-	rm -f *.o
-	rm -f $(TARGET)
+	@rm -f *.o
+	@rm -f $(TARGET)
 	
