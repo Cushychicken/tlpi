@@ -3,10 +3,10 @@ MAKE = make
 default: all
 
 all:
-	make all -C examples/
-	make all -C exercises/
+	@$(MAKE) all -C examples/
+	@$(MAKE) all -C exercises/
 
 clean:
-	make clean -C examples/
-	make clean -C exercises/
+	@$(MAKE) clean -C examples/
+	@$(MAKE) clean -C exercises/
 
