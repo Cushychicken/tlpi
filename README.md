@@ -10,5 +10,12 @@ These are organized by chapter, with each chapter having the following basic str
     └── exercises
 ```
 
-For now, the exercises have to be compiled locally, in the respective `/examples` or `/exercises` directory. The eventual goal is to add 
-makefile support at a higher level so that the whole project can be built in one `make` command. 
+For now, the exercises have to be compiled locally, in the respective `/examples` or `/exercises` directory. 
+
+To generate the example code and problem set solutions, just clone the repository and run:
+
+```shell
+> make lib
+> make all
+```
+Each program will appear in the directory in which it was compiled. 
